@@ -1,0 +1,131 @@
+body {
+  background-color: #ebebeb;
+  margin: 0 auto;
+
+  font-family:arial; 
+  font-size:15px;
+
+}
+table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+table,
+tr,
+td {
+  border:0px;
+  /* border:solid 2px red; */
+  border-spacing: 0;
+  border-collapse: 0;
+}
+
+.header {
+  height: 60px;
+  background-color: #ffffff;
+}
+.info-cupon {
+  background: #f8e376 url(../img/bg_portada_1200.jpg) no-repeat top left;
+  padding: 20px;
+}
+.info-envio {
+  background: #f8e376 url(../img/bg_envio_1200.jpg) no-repeat top left;
+  padding: 20px;
+}
+h1 {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  color: #aa5404;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 35px;
+}
+h2{
+  color:#592E13;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+}
+.info {
+  padding: 0 0 10px 0;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  font-size: 15px;
+  line-height: 20px;
+  color: #aa5404;
+  font-weight: bold;
+}
+.info-cupon h1,
+.info-cupon p,
+.info-cupon a {
+  width: 50%;
+}
+
+.info-envio h1,
+.info-envio p,
+.info-envio a {
+  width: 50%;
+}
+
+.info-promo {
+  background-color: #ffffff;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  color: #592e13;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 20px;
+}
+
+.header td {
+  padding: 0 20px;
+}
+.top-menu {
+  color: #777777;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: normal;
+}
+
+.menu {
+  padding-left: 6px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #666666;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  font-weight: normal;
+}
+.menu span {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.top-menu,
+.menu {
+  text-align: right;
+}
+
+.btn-aceptar, .btn-prueba, .btn-ir-ebay {
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  font-size: 15px;
+  font-weight: normal;
+
+
+  color: #aa5404;
+  border: 1px solid #aa5404;
+  padding: 10px;
+  color: #aa5404;
+  text-decoration: none;
+}
+
+.condiciones{
+  background-color: #ffffff;
+  font-family: Helvetica, arial, sans-serif, "Market Sans";
+  font-size: 13px;
+  text-align: justify;
+  padding: 20px;
+}
+
+ul li{
+  margin-bottom: 15px;
+  
+}

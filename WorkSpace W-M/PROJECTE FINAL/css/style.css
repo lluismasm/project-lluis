@@ -1,0 +1,531 @@
+@import url(normalize.css);
+
+@font-face {
+  font-family: minimo;
+  src: url(/Assets/fonts/Minimo.otf);
+}
+
+/* body, #page, main, header, footer, .section1, #gridsection, #title, div{
+    border: 1px solid red;
+} */
+
+/* això s'empre per fer que tot el div quedi aferrat als màrges de la pàgina*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  padding-top: 0px;
+  margin: 0px;
+}
+html {
+  background-color: rgb(41, 40, 40);
+}
+
+#fixed_header {
+  position: fixed;
+}
+
+header {
+  width: 100%;
+  height: 6vh;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  background-color: rgba(31, 31, 31, 0.857);
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  text-align: end;
+}
+
+nav ul li {
+  /*Per posar-ho en horitzontal (en linea)*/
+  display: inline-block;
+  /* aixi eliminam els punts de llistat*/
+  list-style: none;
+  /*separació entre paraules*/
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  /*per llevar el subretxat empram none*/
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-family: minimo;
+  cursor: pointer;
+}
+/*aixi donam estil per quan tenim el ratoli damunt*/
+nav ul li a:hover {
+  color: rgba(26, 198, 176, 255);
+}
+
+.logo {
+  cursor: pointer;
+  width: 110px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+#article {
+  background-image: url(../Assets/imgs/backgrounds/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 500px;
+  padding: 150px;
+  text-align: right;
+  color: black;
+  font-family: minimo;
+}
+
+#title {
+  background-color: rgba(148, 228, 228, 0.755);
+  padding: 30px;
+  width: 45%;
+  align-items: right;
+  display: inline-block;
+}
+
+.mainbutton {
+  color: white;
+  background-color: teal;
+  border-radius: 7px;
+  width: 100px;
+  margin-top: 15px;
+  box-shadow: 10px;
+}
+
+main {
+  min-height: 850px;
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid white;
+}
+
+section h1 {
+  text-align: center;
+  justify-content: center;
+  font-family: minimo;
+  background-color: rgb(100, 188, 196);
+  color: rgb(0, 0, 0);
+  margin: 0px;
+}
+
+/*---------------------------------*/
+/* Grid Settings Section*/
+
+#gridsection {
+  display: grid;
+  grid-template-columns: 35vh 35vh 35vh 35vh;
+  grid-template-rows: 10vh 30vh 30vh 30vh;
+  grid-template-areas:
+    "title title title title"
+    "pro1 pro2 pro3 pro4"
+    "pro5 pro6 pro7 pro8"
+    "pro9 pro9 pro10 pro10";
+  width: auto;
+
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-bottom: 3rem;
+  padding-top: 0px;
+}
+
+.section1 {
+  background-image: url(../Assets/imgs/backgrounds/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  grid-area: title;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.159);
+  background-color: rgba(148, 228, 228, 0.755);
+}
+
+.title h2 {
+  width: 100%;
+  font-family: minimo;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.project1 {
+  grid-area: pro1;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Spotify.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project2 {
+  grid-area: pro2;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Futbol.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project3 {
+  grid-area: pro3;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Formula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project4 {
+  grid-area: pro4;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Rock.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project5 {
+  grid-area: pro5;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Ebay.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project6 {
+  grid-area: pro6;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Nike.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project7 {
+  grid-area: pro7;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Marvel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project8 {
+  grid-area: pro8;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/ING.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project9 {
+  grid-area: pro9;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/Christmas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+.project10 {
+  grid-area: pro10;
+  border: black 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 1px rgba(164, 160, 160, 0.309);
+  background-image: url(../Assets/imgs/img/urbanfashion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+}
+
+/* -------- Project details animation --------- */
+
+.detail {
+  background: rgba(27, 26, 26, 0.9);
+  border-radius: 9px;
+
+  /* animation */
+  transition: all 0s ease-out;
+  position: absolute;
+
+  /* hidde details */
+  transform: translateX(-1000%);
+  width: 35vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: column;
+  padding-top: 30px;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.detail h3 {
+  color: rgb(219, 213, 213);
+  font-family: minimo;
+  margin: 10px;
+}
+.detail p {
+  color: rgb(219, 213, 213);
+  font-family: minimo;
+  margin: 10px;
+}
+
+.detail button {
+  color: rgb(255, 255, 255);
+  font-family: minimo;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 2px 10px;
+  background-color: teal;
+}
+
+.bigdetail {
+  background: rgba(27, 26, 26, 0.9);
+  border-radius: 9px;
+
+  /* animation */
+  transition: all 0s ease-out;
+  position: absolute;
+
+  /* hidde details */
+  transform: translateX(-1000%);
+  width: 75vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: column;
+  padding-top: 30px;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.bigdetail h3 {
+  color: rgb(219, 213, 213);
+  font-family: minimo;
+  margin: 10px;
+}
+.bigdetail p {
+  color: rgb(219, 213, 213);
+  font-family: minimo;
+  margin: 10px;
+}
+
+.bigdetail button {
+  color: rgb(255, 255, 255);
+  font-family: minimo;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 4px 20px;
+  background-color: teal;
+}
+
+/* animation show details 1 */
+.project1:hover .detail {
+  transform: translateX(0px);
+}
+
+.project1:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project1:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 2 */
+.project2:hover .detail {
+  transform: translateX(0px);
+}
+
+.project2:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project2:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 3 */
+.project3:hover .detail {
+  transform: translateX(0px);
+}
+
+.project3:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project3:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 4 */
+.project4:hover .detail {
+  transform: translateX(0px);
+}
+
+.project4:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project4:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 5 */
+.project5:hover .detail {
+  transform: translateX(0px);
+}
+
+.project5:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project5:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 6 */
+.project6:hover .detail {
+  transform: translateX(0px);
+}
+
+.project6:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project6:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 7 */
+.project7:hover .detail {
+  transform: translateX(0px);
+}
+
+.project7:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project7:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 8 */
+.project8:hover .detail {
+  transform: translateX(0px);
+}
+
+.project8:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project8:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 9 */
+.project9:hover .bigdetail {
+  transform: translateX(0px);
+}
+
+.project9:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project9:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* animation show details 10 */
+.project10:hover .bigdetail {
+  transform: translateX(0px);
+}
+
+.project10:hover {
+  transition: all 0.3s ease-out;
+}
+
+.project10:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* ---------- contact page --------- */
+
+.contact-div {
+  width: 600px;
+  height: fit-content;
+
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  font-family: minimo;
+  color: black;
+}
+
+.contact-div h3 {
+  padding: 1rem;
+  background-color: turquoise;
+  color: rgb(0, 0, 0);
+}
+.contact-div a {
+  margin: 1rem;
+  color: black;
+  align-items: center;
+  justify-content: column;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.contact-div img {
+  position: absolute;
+}
+
+.map-div {
+  height: 40vh;
+  width: 90vh;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin: 0;
+  background-color: rgb(82, 82, 82);
+  border-top: white 2px solid;
+}
+
+.foot {
+  text-align: center;
+  padding: 1rem;
+  border-top: white 2px solid;
+}

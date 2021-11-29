@@ -1,0 +1,147 @@
+/*
+body, #page, main, header, .logo, .cart{
+    border: 1px solid red;
+    
+}*/
+
+/* això s'empre per fer que tot el div quedi aferrat als màrges de la pàgina*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* amb això feim referència a tot el menú superior*/
+header{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 160px;
+    /*amb aquesta propietat feim que surti el cursor selector quan pasam per damunt*/
+    cursor: pointer;
+}
+
+.cart{
+    width: 40px;
+    cursor: pointer;
+}
+
+/*amb això cream la saparació del carrito i la navegació */
+nav{
+    flex-grow: 1;
+    padding-left: 60px;
+
+}
+nav ul li {
+    /*Per posar-ho en horitzontal (en linea)*/
+    display: inline-block;
+    /* aixi eliminam els punts de llistat*/
+    list-style: none;
+    /*separació entre paraules*/
+    margin: 0px 20px;
+
+}
+
+nav ul li a{
+    /*per llevar el subretxat empram none*/
+    text-decoration: none;
+    color: #333;
+}
+
+/*aixi donam estil per quan tenim el ratoli damunt*/
+nav ul li a:hover{
+    border: dotted 2px blue;
+}
+
+/*imatge de fons*/
+body{
+    background-image: url(/recursos/background.png);
+    background-position: center;
+    background-size:cover;
+}
+
+
+/* ajustam la imatge del main adalt a la */
+main{
+    /*asignam els màrges creats, tant el superior com l'esquerraen relació al div*/
+    margin-left: 10%;
+    margin-top: 10%;
+    background:url(./recursos/cover-page.png) no-repeat top right;
+    background-size: 60%;
+    /*ajustar l'alt del cos main*/
+    height: 65vh;
+}
+
+main  h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: rgb(16, 16, 117);
+}
+
+main p{
+    font-size: 20px;
+    color: rgb(84, 21, 143);
+}
+
+/* aquest format es per donar l'aspecte de botó*/
+main .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(162, 162, 190,) rgb(224, 139, 154));
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: wheat;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+.arrow-icons img {
+    width: 40px;
+    /* separació de les fletxes */
+    margin-right: 25px;
+
+}
+
+.social-links{
+    transform: rotate(-90deg);
+    /* aixo s'empre per fer que no es mogui, que sempre mantengui les seguents proporcions */
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: purple;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border: 1px solid transparent;
+
+}
+
+.social-links a:hover{
+    color: violet;
+    border: 1px solid darkblue;
+}
+
+.social-links a:after{
+    content:'.';
+}
+
+
+#page {
+    height: 100vh;
+    width: 100%;
+    /* aquest padding fa el marges laterals*/
+    padding-left: 5%;
+    padding-right: 5%;
+    /*border box es per ajustar page (el div del body) en aquest cas al body perque siguin del mateix tamany*/
+    box-sizing: border-box;
+    position: relative;
+}
