@@ -1,7 +1,0 @@
-Logo colors:
-
-Dark blue: rgba(96,195,200,255)
-Blue: rgba(128,207,211,255)
-light blue: rgba(173,223,223,255)
-
-background color: rgba(26,198,176,255)
